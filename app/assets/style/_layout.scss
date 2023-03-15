@@ -59,25 +59,25 @@ header {
 }
 
 .mobileNav {
+  display: none;
   color: white;
   z-index: 100;
   a {
       color: white;
       font-size: 40px;
     }
-}
-.menuIcon {
-  display: none;
-  font-size: 40px;
   @include mobile {
-    display: flex;
+    display: block;
   }
 }
-.showMenu {
-  transform: translateY(100%);
+.menuIcon {
+  font-size: 40px;
 }
 .closeIcon {
   display: none;
+}
+.showMenu {
+  transform: translateY(100%);
 }
 
 //=== footer ===//
