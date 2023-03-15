@@ -246,28 +246,26 @@ header {
         line-height: 48px; } }
 
 .mobileNav {
+  display: none;
   color: white;
   z-index: 100; }
   .mobileNav a {
     color: white;
     font-size: 40px; }
+  @media (max-width: 767px) {
+    .mobileNav {
+      display: block; } }
 
 .menuIcon {
-  display: none;
   font-size: 40px; }
-  @media (max-width: 767px) {
-    .menuIcon {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
+
+.closeIcon {
+  display: none; }
 
 .showMenu {
   -webkit-transform: translateY(100%);
       -ms-transform: translateY(100%);
           transform: translateY(100%); }
-
-.closeIcon {
-  display: none; }
 
 .footer {
   height: 200px;
