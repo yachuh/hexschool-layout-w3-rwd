@@ -1,8 +1,86 @@
-.header {
-  height: 80px;
+header {
   background-color: $primary;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
 }
 
+.logo {
+  width: 80px;
+  height: 49px;
+  background-image: url(../images/logo-white.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.headerNav {
+  gap: 64px;
+  a {
+    color: white;
+    font-size: 20px;
+    transition: ease all 0.5s;
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+  @include mobile {
+    display: flex;
+    // 改變成絕對定位
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-top: 1px solid white;
+    background-color: $primary;
+    // menu 轉成直的
+    flex-direction: column;
+    // 隱藏 menu
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    gap: 0;
+    .nav-item {
+      width: 100%;
+      text-align: center;
+      background-color: $primary;
+      border-bottom: 1px solid white;
+    }
+    a {
+      line-height: 48px;
+    }
+  }
+}
+
+.mobileNav {
+  color: white;
+  z-index: 100;
+  a {
+      color: white;
+      font-size: 40px;
+    }
+}
+.menuIcon {
+  display: none;
+  font-size: 40px;
+  @include mobile {
+    display: flex;
+  }
+}
+.showMenu {
+  transform: translateY(100%);
+}
+.closeIcon {
+  display: none;
+}
+
+//=== footer ===//
 .footer {
   height: 200px;
   background-color: #00cc99;
