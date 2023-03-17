@@ -25,10 +25,6 @@ header {
   a {
     color: white;
     font-size: 20px;
-    transition: ease all 0.5s;
-    &:hover {
-      transform: scale(1.15);
-    }
   }
   @include mobile {
     display: flex;
@@ -82,6 +78,93 @@ header {
 
 //=== footer ===//
 .footer {
-  height: 200px;
-  background-color: #00cc99;
+  background-color: $primary;
+  padding-top: 48px;
+  padding-bottom: 32px;
+  color: white;
+  a {
+    color: white;
+  }
+  @include pad {
+    padding-bottom: 40px;
+  }
+  @include mobile {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.footerMain {
+  border-bottom: 1px solid white;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  @include mobile {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+  }
+}
+.footerNav {
+  gap: 48px;
+  @include mobile {
+    display: none;
+  }
+}
+.footerSocialMedia{
+  gap: 32px;
+  img {
+    width: 48px;
+    height: 48px;
+  }
+  @include pad {
+    gap: 16px;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  @include mobile {
+    gap: 8px;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.footerContact {
+  color: white;
+  font-size: 36px;
+  margin-top: 24px;
+  .material-icons {
+    margin-right: 16px;
+    font-size: 48px;
+  }
+  li:first-child {
+    margin-bottom: 8px;
+  }
+  @include mobile {
+    font-size: 16px;
+    margin-top: 0;
+    .material-icons {
+      margin-right: 8px;
+      font-size: 24px;
+    }
+  }
+}
+
+.footerCopyright {
+  font-size: 14px;
+  .terms {
+    gap: 48px;
+  }
+  @include mobile {
+    font-size: 16px;
+    flex-direction: column;
+    .terms {
+      margin-top: 8px;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
 }
