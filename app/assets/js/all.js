@@ -20,7 +20,5 @@ function toggleMenu() {
     closeIcon.style.display = "block";
     menuIcon.style.display = "none";
   }
-  console.log("click");
-  // headerNav.classList.toggle("");
 }
 mobileNav.addEventListener("click", toggleMenu);

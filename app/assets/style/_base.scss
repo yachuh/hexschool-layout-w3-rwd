@@ -18,10 +18,10 @@ img {
 a {
   display: block;
   text-decoration: none;
-  transition: ease all 0.5s;
-  &:hover {
-    transform: scale(1.15);
-  }
+  // transition: ease all 0.5s;
+  // &:hover {
+  //   transform: scale(1.15);
+  // }
 }
 
 .container {
@@ -34,4 +34,8 @@ a {
   @include mobile {
     max-width: 375px; //345 + 30 gutter
   }
+}
+
+main {
+  margin-top: 80px;
 }

@@ -1,5 +1,6 @@
 header {
   background-color: $primary;
+  height: 80px;
   padding-top: 16px;
   padding-bottom: 16px;
   position: fixed;
@@ -7,10 +8,9 @@ header {
   left: 0px;
   right: 0px;
 }
-
 .logo {
   width: 80px;
-  height: 49px;
+  height: 48.57px;
   background-image: url(../images/logo-white.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -19,7 +19,6 @@ header {
   overflow: hidden;
   white-space: nowrap;
 }
-
 .headerNav {
   gap: 64px;
   a {
@@ -53,7 +52,6 @@ header {
     }
   }
 }
-
 .mobileNav {
   display: none;
   color: white;
@@ -93,7 +91,6 @@ header {
     padding-bottom: 24px;
   }
 }
-
 .footerMain {
   border-bottom: 1px solid white;
   padding-bottom: 32px;
@@ -152,7 +149,6 @@ header {
     }
   }
 }
-
 .footerCopyright {
   font-size: 14px;
   .terms {

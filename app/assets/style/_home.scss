@@ -1,0 +1,254 @@
+// hero section
+.hero {
+  background-image: url(../images/home-header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include pad {
+    background-image: url(../images/home-header-sm.png);
+  }
+  @include mobile {
+    background-image: url(../images/home-header-sm.png);
+  }
+}
+
+.heroIntro {
+  height: 787px;
+  p {
+    font-size: 2.25em;
+    color: $danger;
+  }
+  h2 {
+    font-size: 4em;
+    color: $danger;
+    font-weight: bold;
+  }
+  a {
+    margin-top: 4px;
+    padding: 6px 12px;
+    background-color: $primary;
+    font-size: 1.25em;
+    color: $white;
+  }
+  @include mobile {
+    height: 396px;
+    p {
+      font-size: 1em;
+    }
+    h2 {
+      font-size: 1.5em;
+    }
+    a {
+      margin-top: 8px;
+    }
+  }
+}
+
+// fetaure section
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  &-title {
+    font-size: 3em;
+    text-align: center;
+    color: $danger;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+  &-list {
+    gap: 24px;
+  }
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &-title {
+      font-size: 1.5em;
+    }
+  }
+}
+
+.feature {
+  background-color: $pink;
+  img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 16px;
+  }
+  h3 {
+    font-size: 1.5em;
+    text-align: center;
+    color: $danger;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  li {
+    width: 18%;
+  }
+  @include pad {
+    .section-item {
+      width: 48%;
+    }
+  }
+  @include mobile {
+    .section-item {
+      width: 100%;
+    }
+  }
+}
+
+.product {
+  img {
+    margin-bottom: 8px;
+  }
+  h3 {
+    font-size: 3em;
+    text-align: center;
+    color: $primary;
+    font-weight: bold;
+    font-style: italic;
+  }
+  li {
+    width: 30%;
+  }
+  @include pad {
+    li {
+      width: 100%;
+    }
+  }
+}
+
+.coDesign {
+  background-image: url(../images/index-bg-md.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+  h2 {
+    color: $white;
+  }
+  li {
+    width: 50%;
+    background-color: $white;
+  }
+  h3 {
+    color: $primary;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    padding: 8px 0px;
+  }
+  &-bg1 {
+    height: 240px;
+    background-image: url(../images/home-section4-1.png);
+    background-size: cover;
+  }
+  &-bg2 {
+    height: 240px;
+    background-image: url(../images/home-section4-2.png);
+    background-size: cover;
+  }
+  @include pad {
+    ul {
+      gap: 24px;
+    }
+    li {
+      width: 100%;
+    }
+  }
+  @include mobile {
+    li {
+      width: 100%;
+    }
+    &-bg1 {
+      background-image: url(../images/home-section4-1-sm.png);
+    }
+    &-bg2 {
+      background-image: url(../images/home-section4-2-sm.png);
+    }
+  }
+}
+.customer {
+  li {
+    width: 23%;
+    border: 1px solid $light;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px #00000029;
+    div {
+      padding: 16px;
+    }
+  }
+  h4 {
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  p {
+    margin-bottom: 72px;
+  }
+  time {
+    color: $gray;
+    font-size: 0.875em;
+  }
+  @include pad {
+    li {
+      width: 48%;
+    }
+  }
+  @include mobile {
+    ul {
+      gap: 16px;
+    }
+    li {
+      width: 100%;
+    }
+  }
+}
+
+.contact {
+  background-color: $pink;
+  .contactUs {
+    width: 49%;
+    margin: 0 auto;
+    > p{
+      font-size: 1.25em;
+      margin-bottom: 24px;
+    }
+  }
+  input, textarea {
+    width: 100%;
+    background-color: $pink;
+    border: 1px solid $black;
+    padding: 6px 12px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    &[type="checkbox"] {
+      width: 24px;
+      height: 24px;
+      margin: 0px;
+      padding: 0px;
+      margin-right: 4px;
+      border: 2px solid $black;
+    }
+    &[type="button"] {
+      border: 0;
+      background-color: $primary;
+      color: $white;
+      font-weight: bold;
+      padding: 16px 0px;
+      margin-top: 24px;
+      cursor: pointer;
+    }
+  }
+  @include pad {
+    .contactUs {
+      width: 75%;
+    }
+  }
+  @include mobile {
+    .contactUs {
+      width: 100%;
+      >p {
+          font-size: 16px;
+        }
+    }
+  }
+}
