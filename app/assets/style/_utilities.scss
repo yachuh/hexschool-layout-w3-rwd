@@ -1,7 +1,11 @@
+// flexbox
 .d-flex {
   display: flex;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .flex-column {
   flex-direction: column;
 }
@@ -18,4 +22,8 @@
 
 .align-start {
   align-items: flex-start;
+}
+
+.align-end {
+  align-items: end;
 }
