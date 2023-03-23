@@ -84,12 +84,12 @@
     width: 18%;
   }
   @include pad {
-    .section-item {
+    li {
       width: 48%;
     }
   }
   @include mobile {
-    .section-item {
+    li {
       width: 100%;
     }
   }
