@@ -272,10 +272,10 @@ main {
   .feature li {
     width: 18%; }
   @media (max-width: 992px) {
-    .feature .section-item {
+    .feature li {
       width: 48%; } }
   @media (max-width: 767px) {
-    .feature .section-item {
+    .feature li {
       width: 100%; } }
 
 .product img {
