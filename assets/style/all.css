@@ -605,21 +605,27 @@ header {
   height: 296px; }
   .productHeader div {
     width: 50%; }
+  .productHeader-bg1, .productHeader-bg2, .productHeader-bg3, .productHeader-bg4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
   .productHeader-bg1 {
-    background-image: url(../images/product-header-1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; }
+    background-image: url(../images/product-header-1.png); }
   .productHeader-bg2 {
-    background-image: url(../images/product-header-2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; }
+    background-image: url(../images/product-header-2.png); }
+  .productHeader-bg3 {
+    background-image: url(../images/product-header-3.png); }
+  .productHeader-bg4 {
+    background-image: url(../images/product-header-4.png); }
   @media (max-width: 992px) {
     .productHeader-bg1 {
       background-image: url(../images/product-header-sm-1.png); }
     .productHeader-bg2 {
-      background-image: url(../images/product-header-sm-2.png); } }
+      background-image: url(../images/product-header-sm-2.png); }
+    .productHeader-bg3 {
+      background-image: url(../images/product-header-sm-3.png); }
+    .productHeader-bg4 {
+      background-image: url(../images/product-header-sm-4.png); } }
   @media (max-width: 767px) {
     .productHeader {
       height: 136px; } }
@@ -643,17 +649,19 @@ header {
 
 .productList {
   margin-top: 32px;
-  gap: 80px 24px; }
+  margin-left: -12px;
+  margin-right: -12px;
+  gap: 80px 0px; }
   @media (max-width: 992px) {
     .productList {
-      gap: 40px 24px; } }
+      gap: 40px 0px; } }
   @media (max-width: 767px) {
     .productList {
       margin-top: 24px;
       gap: 24px 0px; } }
 
 .productItem {
-  width: 22%; }
+  padding: 0px 12px; }
   .productItem-text {
     font-size: 1.5em;
     font-family: 'Roboto'; }
@@ -670,11 +678,23 @@ header {
         background-color: #5F3E2D; }
       .productItem-color div:nth-child(2) {
         background-color: #B75929; }
+
+.optical {
+  width: 25%; }
   @media (max-width: 992px) {
-    .productItem {
-      width: 48%; } }
+    .optical {
+      width: 50%; } }
   @media (max-width: 767px) {
-    .productItem {
+    .optical {
+      width: 100%; } }
+
+.sunglasses {
+  width: 33.3%; }
+  @media (max-width: 992px) {
+    .sunglasses {
+      width: 50%; } }
+  @media (max-width: 767px) {
+    .sunglasses {
       width: 100%; } }
 
 .pagination {
@@ -694,9 +714,9 @@ header {
       background-color: #F2F2F2; }
     .pagination a.pageUp {
       border-left: 1px solid #555555;
-      padding: 12px 10px; }
+      padding: 12px 11px; }
     .pagination a.pageDown {
-      padding: 12px 10px; }
+      padding: 12px 11px; }
   .pagination .active {
     background-color: #000000;
     color: #fff; }
@@ -705,7 +725,8 @@ header {
       color: #fff; }
   @media (max-width: 767px) {
     .pagination {
-      font-size: 16px;
-      margin: 64px auto; } }
+      margin: 64px auto; }
+      .pagination a {
+        font-size: 16px; } }
 
 /*# sourceMappingURL=all.css.map */
