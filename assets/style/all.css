@@ -743,22 +743,22 @@ header {
 .storePage {
   padding-top: 96px;
   padding-bottom: 80px; }
-  .storePage .pageTitle {
-    margin-bottom: 32px; }
   @media (max-width: 767px) {
     .storePage {
       padding-top: 40px;
       padding-bottom: 64px;
       padding-left: 13px;
-      padding-right: 14px; }
-      .storePage .pageTitle {
-        margin-bottom: 24px; } }
+      padding-right: 14px; } }
 
 .selectArea {
-  font-size: 1.25em; }
+  margin-top: 32px; }
+  .selectArea p {
+    font-size: 1.25em; }
   @media (max-width: 767px) {
     .selectArea {
-      font-size: 1em; } }
+      margin-top: 24px; }
+      .selectArea p {
+        font-size: 1em; } }
 
 .dropdown {
   width: 304px;
@@ -851,5 +851,42 @@ header {
   @media (max-width: 767px) {
     .storeCard {
       width: 100%; } }
+
+.singleStore {
+  margin-top: 40px; }
+  .singleStore .storeCard {
+    padding: 0px;
+    width: 41.66%;
+    margin-right: 24px; }
+  .singleStore .storeMap {
+    width: 60%; }
+  @media (max-width: 992px) {
+    .singleStore {
+      display: block; }
+      .singleStore .storeCard {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-column-gap: 24px;
+           -moz-column-gap: 24px;
+                column-gap: 24px; }
+        .singleStore .storeCard img {
+          width: 50%; }
+        .singleStore .storeCard div {
+          width: 50%; }
+      .singleStore .storeMap {
+        width: 100%;
+        height: 414px;
+        margin-top: 24px; } }
+  @media (max-width: 767px) {
+    .singleStore {
+      margin-top: 24px; }
+      .singleStore .storeCard {
+        display: block; }
+        .singleStore .storeCard img {
+          width: 100%; }
+        .singleStore .storeCard div {
+          width: 100%; } }
 
 /*# sourceMappingURL=all.css.map */
