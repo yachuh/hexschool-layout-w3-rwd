@@ -22,5 +22,14 @@ function toggleMenu() {
   }
 }
 
-mobileNav.addEventListener("click", toggleMenu);
+mobileNav.addEventListener("click", toggleMenu); //=== dropdown menu ===//
+
+var dropdownToggle = document.querySelector(".dropdown-toggle");
+var dropdownMenu = document.querySelector(".dropdown-menu");
+
+function toggleDropdown() {
+  dropdownMenu.classList.toggle("showDropdown");
+}
+
+dropdownToggle.addEventListener("click", toggleDropdown);
 //# sourceMappingURL=all.js.map
