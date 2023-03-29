@@ -22,3 +22,13 @@ function toggleMenu() {
   }
 }
 mobileNav.addEventListener("click", toggleMenu);
+
+//=== dropdown menu ===//
+const dropdownToggle = document.querySelector(".dropdown-toggle");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+
+function toggleDropdown() {
+  dropdownMenu.classList.toggle("showDropdown");
+}
+
+dropdownToggle.addEventListener("click", toggleDropdown);
