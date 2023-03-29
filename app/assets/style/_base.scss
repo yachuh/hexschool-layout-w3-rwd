@@ -33,9 +33,23 @@ a {
   }
   @include mobile {
     max-width: 375px; //345 + 30 gutter
+    
   }
 }
 
 main {
   margin-top: 80px;
+}
+
+.pageTitle {
+  font-size: 3em;
+  font-weight: 900;
+  border-left: 8px solid $primary;
+  padding-left: 16px;
+}
+.selector {
+  margin-top: 33px;
+  p {
+    font-size: 1.5em;
+  }
 }
