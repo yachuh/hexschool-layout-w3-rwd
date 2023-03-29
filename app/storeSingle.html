@@ -1,0 +1,51 @@
+---
+title: 門市據點 — 台北中山旗艦店
+layout: ./app/layout.ejs
+engine: ejs
+current: storeSingle
+---
+
+<div class="container storePage">
+    <h1 class="pageTitle">門市據點</h1>
+    <!-- dropdown section start-->
+    <div class="selectArea d-flex align-center">
+      <p>選擇地區</a>
+      <div class="dropdown">
+        <div class="dropdown-toggle d-flex justify-between align-center">
+          <p>選擇地區</p>
+          <span class="material-icons">arrow_drop_down</span>
+        </div>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">台北市</a>
+          <a href="#" class="dropdown-item">台中市</a>
+          <a href="#" class="dropdown-item">高雄市</a>
+        </div>
+      </div>
+    </div>
+    <!-- dropdown section end-->
+    <section class="d-flex singleStore">
+      <div class="storeCard">
+        <img src="./assets/images/store-1.png" alt="台北中山旗艦店">
+        <div>
+          <h3>台北中山旗艦店</h3>
+          <ul>
+            <li class="d-flex">
+              <span class="material-icons">call</span>
+              <p>電話：(02)000-1234</p>
+            </li>
+            <li class="d-flex">
+              <span class="material-icons">schedule</span>
+              <p>營業時間：10:00-21:00</p>
+            </li>
+            <li class="d-flex">
+              <span class="material-icons">place</span>
+              <p>地址：台北市中山區南京東路25巷2-1號</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="storeMap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.463756793296!2d121.53338542967914!3d25.052266132671924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf92494d29%3A0xd908a8a881f73476!2sNo.%2025%2C%20Section%203%2C%20Nanjing%20E%20Rd%2C%20Zhongshan%20District%2C%20Taipei%20City%2C%2010491!5e0!3m2!1sen!2stw!4v1680090124443!5m2!1sen!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+</div>
