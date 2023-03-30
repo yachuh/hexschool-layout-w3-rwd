@@ -18,9 +18,11 @@ img {
 a {
   display: block;
   text-decoration: none;
-  // transition: ease all 0.5s;
+  color: $black;
+  // transition: ease all 0.3s;
   // &:hover {
   //   transform: scale(1.15);
+  //   text-shadow: 2px 2px 2px rgba($color: $dgray, $alpha: 0.6);
   // }
 }
 

@@ -1,0 +1,183 @@
+.blogPageSingle .container {
+  @include mobile {
+    padding-left: 13px;
+    padding-right: 14px;
+  }
+}
+.blogMenu {
+  @include mobile {
+    display: block;
+    padding: 12px 10;
+    .material-icons {
+      display: none;
+    }
+    ul {
+      gap: 25px;
+    }
+  }
+}
+.crumbs {
+  margin-top: 24px;
+  @include mobile {
+    margin-top: 16px;
+  }
+}
+.crumb {
+  display: inline-flex;
+  &>a::after {
+    display: inline-block;
+    content:'/';
+    color: $black;
+    padding: 0px 3px;
+  }
+  &:last-child {
+    color: $primary;
+  }
+}
+.hashtags {
+  margin-top: 8px;
+  gap: 15px;
+  a {
+    font-size: 1.5em;
+    color: $primary;
+    font-weight: bold;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  @include mobile {
+    gap: 16px;
+    a {
+      font-size: 1em;
+    }
+  }
+}
+
+//=== blogMain section ===/
+.blogArea {
+  width: 70%;
+  margin-right: 24px;
+  padding-bottom: 80px;
+  article > img {
+    margin-bottom: 8px;
+  }
+  article > p {
+    margin-bottom: 40px;
+    color: #555555;
+  }
+  hgroup {
+    margin-bottom: 16px;
+
+    h2 {
+      font-size: 3em;
+    }
+
+    p {
+      font-size: 1.5em;
+      font-weight: 500;
+    }
+  }
+  @include pad {
+    width: 75%;
+      article > img {
+        margin-bottom: 16px;
+      }
+      article > p {
+        margin-bottom: 24px;
+      }
+      hgroup {
+        margin-bottom: 24px;
+      }
+  }
+  @include mobile {
+    width: 100%;
+    padding-bottom: 64px;
+      article > img {
+        margin-bottom: 8px;
+      }
+      article > p {
+        margin-bottom: 16px;
+      }
+  }
+}
+.blogFooter { 
+  .share {
+    gap: 16px;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 16px;
+    p {
+      font-weight: bold;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+      transition: all ease .3s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+  .nextBlog {
+    margin-top: 24px;
+    a {
+      display: inline-flex;
+      gap: 8px;
+      .span {
+        font-size: 24px;
+      }
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  @include mobile {
+    display: none;
+  }
+}
+
+//=== blogTags section ===/
+.blogTags {
+  width: 25%;
+  h4 {
+    color: $primary;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  span {
+    color: $primary;
+    font-size: 48px;
+    margin-right: 8px;
+  }
+  ul {
+    margin-top: 4px;
+    li {
+      margin-right: 24px;
+    }
+    a {
+      color: $primary;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  }
+  @include pad {
+    h4 {
+      font-size: 1em;
+      line-height: 24px;
+    }
+    span {
+      font-size: 24px;
+    }
+    ul {
+      margin-top: 8px;
+      li {
+        margin-right: 16px;
+      }
+      a {
+        font-size: 1em;
+      }
+    }
+  }
+  @include mobile {
+    display: none;
+  }
+}
