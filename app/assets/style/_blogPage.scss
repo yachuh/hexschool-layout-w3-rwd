@@ -1,15 +1,29 @@
 .blogPage {
+  .pageTitle {
+    margin-top: 96px;
+  }
+  @include pad {
+    .pageTitle {
+      margin-top: 80px;
+    }
+  }
   @include mobile {
     padding-top: 40px;
+    .pageTitle {
+      margin-top: 0;
+    }
   }
 }
 .blogMenu {
   background-color: $danger;
   padding: 8px 0;
-  margin-bottom: 96px;
   a {
     color: $white;
     font-weight: bold;
+    transition: all ease 0.3s;
+    &:hover {
+      text-shadow: 2px 2px 5px rgba($color: $pink, $alpha: 0.4);
+    }
   }
   ul {
     gap: 48px;
@@ -17,9 +31,6 @@
   .material-icons {
     font-size: 40px;
     font-weight: normal;
-  }
-  @include pad {
-    margin-bottom: 80px;
   }
   @include mobile {
     display: none;
@@ -70,6 +81,9 @@
     font-weight: bold;
     color: $danger;
     text-align: right;
+    &:hover {
+        color: $red;
+      }
   }
   @include pad {
     margin-bottom: 24px;
