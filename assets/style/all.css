@@ -974,4 +974,31 @@ header {
       .blogPost .blogContent-md {
         display: none; } }
 
+.faqPage {
+  padding-top: 96px;
+  padding-bottom: 80px; }
+  .faqPage h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 32px; }
+  .faqPage ul {
+    margin-top: 24px; }
+  .faqPage h3 {
+    font-size: 1.25em;
+    font-weight: bold; }
+  .faqPage p {
+    margin-top: 8px; }
+  .faqPage li {
+    margin-bottom: 32px; }
+    .faqPage li:last-child {
+      margin-bottom: 0; }
+  @media (max-width: 767px) {
+    .faqPage {
+      padding-top: 40px;
+      padding-bottom: 64px; }
+      .faqPage h2 {
+        margin-top: 24px; }
+      .faqPage li {
+        margin-bottom: 24px; } }
+
 /*# sourceMappingURL=all.css.map */
