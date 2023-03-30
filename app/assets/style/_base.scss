@@ -24,6 +24,7 @@ a {
   // }
 }
 
+// container
 .container {
   max-width: 1440px; //1110 + 30 gutter
   padding: 0 15px;
@@ -37,6 +38,7 @@ a {
   }
 }
 
+// layout
 main {
   margin-top: 80px;
 }
@@ -50,6 +52,7 @@ main {
     font-size: 1.5em;
   }
 }
+
 .selector {
   margin-top: 33px;
   p {

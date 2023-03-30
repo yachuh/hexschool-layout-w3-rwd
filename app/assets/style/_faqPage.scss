@@ -1,0 +1,35 @@
+.faqPage {
+  padding-top: 96px;
+  padding-bottom: 80px;
+  h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 32px;
+  }
+  ul {
+    margin-top: 24px;
+  }
+  h3 {
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+  p {
+    margin-top: 8px;
+  }
+  li {
+    margin-bottom: 32px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 64px;
+    h2 {
+      margin-top: 24px;
+    }
+    li {
+      margin-bottom: 24px;
+    }
+  }
+}
