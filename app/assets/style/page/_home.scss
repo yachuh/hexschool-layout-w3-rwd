@@ -1,4 +1,4 @@
-// hero section
+//=== hero section ===/
 .hero {
   background-image: url(../images/home-header.png);
   background-size: cover;
@@ -10,7 +10,6 @@
     background-image: url(../images/home-header-sm.png);
   }
 }
-
 .heroIntro {
   height: 787px;
   p {
@@ -28,6 +27,7 @@
     background-color: $primary;
     font-size: 1.25em;
     color: $white;
+    @include hoverScale(1.12);
   }
   @include mobile {
     height: 396px;
@@ -43,7 +43,7 @@
   }
 }
 
-// fetaure section
+//=== fetaure section ===/
 .section {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -66,6 +66,7 @@
   }
 }
 
+// feature
 .feature {
   background-color: $pink;
   img {
@@ -95,6 +96,7 @@
   }
 }
 
+// product
 .product {
   img {
     margin-bottom: 8px;
@@ -114,8 +116,12 @@
       width: 100%;
     }
   }
+  a {
+    @include hoverBoxShadow;
+  }
 }
 
+// co design product
 .coDesign {
   background-image: url(../images/index-bg-md.png);
   background-repeat: no-repeat;
@@ -127,6 +133,7 @@
   li {
     width: 50%;
     background-color: $white;
+    @include hoverTextShadow;
   }
   h3 {
     color: $primary;
@@ -165,6 +172,8 @@
     }
   }
 }
+
+// customer review
 .customer {
   li {
     width: 23%;
@@ -201,6 +210,7 @@
   }
 }
 
+// contact form
 .contact {
   background-color: $pink;
   .contactUs {
@@ -236,6 +246,7 @@
       padding: 16px 0px;
       margin-top: 24px;
       cursor: pointer;
+      @include hoverScale(1.1);
     }
   }
   @include pad {

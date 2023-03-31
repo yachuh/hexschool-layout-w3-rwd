@@ -1,3 +1,5 @@
+
+//=== RWD ===/
 $pad: 992px;
 $mobile: 767px;
 
@@ -11,4 +13,26 @@ $mobile: 767px;
   @media(max-width:$mobile) {
     @content;
   }
+}
+
+//=== hover effect ===/
+@mixin hoverBoxShadow {
+  transition: box-shadow .3s;
+  &:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+  }
+}
+
+@mixin hoverTextShadow {
+  transition: text-shadow .3sß;
+  &:hover {
+    text-shadow: 2px 2px 2px rgba($color: $dgray, $alpha: 0.6);
+  }
+}
+
+@mixin hoverScale($scaleSize) {
+  transition: all ease .3s;
+    &:hover {
+      transform: scale($scaleSize);
+    }
 }
