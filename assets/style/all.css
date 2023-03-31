@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
@@ -244,7 +245,14 @@ header {
   gap: 64px; }
   .headerNav a {
     color: white;
-    font-size: 20px; }
+    font-size: 20px;
+    -webkit-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    transition: all ease .3s; }
+    .headerNav a:hover {
+      -webkit-transform: scale(1.12);
+          -ms-transform: scale(1.12);
+              transform: scale(1.12); }
   @media (max-width: 767px) {
     .headerNav {
       display: -webkit-box;
@@ -306,7 +314,14 @@ header {
   padding-bottom: 32px;
   color: white; }
   .footer a {
-    color: white; }
+    color: white;
+    -webkit-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    transition: all ease .3s; }
+    .footer a:hover {
+      -webkit-transform: scale(1.12);
+          -ms-transform: scale(1.12);
+              transform: scale(1.12); }
   @media (max-width: 992px) {
     .footer {
       padding-bottom: 40px; } }
@@ -416,7 +431,14 @@ header {
     padding: 6px 12px;
     background-color: #AA0601;
     font-size: 1.25em;
-    color: #fff; }
+    color: #fff;
+    -webkit-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    transition: all ease .3s; }
+    .heroIntro a:hover {
+      -webkit-transform: scale(1.12);
+          -ms-transform: scale(1.12);
+              transform: scale(1.12); }
   @media (max-width: 767px) {
     .heroIntro {
       height: 396px; }
@@ -483,6 +505,16 @@ header {
   .product li {
     width: 100%; } }
 
+.product a {
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  -o-transition: box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s; }
+  .product a:hover {
+    -webkit-box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+            box-shadow: 0 0 11px rgba(33, 33, 33, 0.2); }
+
 .coDesign {
   background-image: url(../images/index-bg-md.png);
   background-repeat: no-repeat;
@@ -492,7 +524,12 @@ header {
     color: #fff; }
   .coDesign li {
     width: 50%;
-    background-color: #fff; }
+    background-color: #fff;
+    -webkit-transition: text-shadow .3sß;
+    -o-transition: text-shadow .3sß;
+    transition: text-shadow .3sß; }
+    .coDesign li:hover {
+      text-shadow: 2px 2px 2px rgba(33, 37, 41, 0.6); }
   .coDesign h3 {
     color: #AA0601;
     text-align: center;
@@ -581,7 +618,14 @@ header {
       font-weight: bold;
       padding: 16px 0px;
       margin-top: 24px;
-      cursor: pointer; }
+      cursor: pointer;
+      -webkit-transition: all ease .3s;
+      -o-transition: all ease .3s;
+      transition: all ease .3s; }
+      .contact input[type="button"]:hover, .contact textarea[type="button"]:hover {
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1); }
   @media (max-width: 992px) {
     .contact .contactUs {
       width: 75%; } }
