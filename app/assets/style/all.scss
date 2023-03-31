@@ -4,8 +4,8 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
 
 // basics
-@import "reset";
 @import "variables";
+@import "reset";
 @import "mixin";
 @import "base";
 
@@ -16,11 +16,11 @@
 @import "layout";
 
 // pages
-@import "home";
-@import "productPage";
-@import "storePage";
-@import "storePageSingle";
-@import "blogPage";
-@import "blogPageSingle";
-@import "faqPage";
+@import "./page/home";
+@import "./page/productPage";
+@import "./page/storePage";
+@import "./page/storePageSingle";
+@import "./page/blogPage";
+@import "./page/blogPageSingle";
+@import "./page/faqPage";
 
