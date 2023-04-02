@@ -1,0 +1,30 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", Roboto, Arial, sans-serif;
+  line-height: 1.5;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: $black;
+}
+
+// layout
+main {
+  margin-top: 80px;
+}
+// .selector {
+//   margin-top: 33px;
+//   p {
+//     font-size: 1.5em;
+//   }
+// }

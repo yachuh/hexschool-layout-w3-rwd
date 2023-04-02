@@ -1,102 +1,29 @@
-header {
-  background-color: $primary;
-  height: 80px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-}
-.logo {
-  width: 80px;
-  height: 48.57px;
-  background-image: url(../images/logo-white.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: block;
-  text-indent: 101%;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.headerNav {
-  gap: 64px;
-  a {
-    color: white;
-    font-size: 20px;
-    @include hoverScale(1.12);
-  }
-  @include mobile {
-    display: flex;
-    // 改變成絕對定位
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    border-top: 1px solid white;
-    background-color: $primary;
-    // menu 轉成直的
-    flex-direction: column;
-    // 隱藏 menu
-    transform: translateY(-100%);
-    transition: transform 0.2s;
-    gap: 0;
-    .nav-item {
-      width: 100%;
-      text-align: center;
-      background-color: $primary;
-      border-bottom: 1px solid white;
-    }
-    a {
-      line-height: 48px;
-    }
-  }
-}
-.mobileNav {
-  display: none;
-  color: white;
-  z-index: 99;
-  a {
-      color: white;
-      font-size: 40px;
-    }
-  @include mobile {
-    display: block;
-  }
-}
-.menuIcon {
-  font-size: 40px;
-}
-.closeIcon {
-  display: none;
-}
-.showMenu {
-  transform: translateY(100%);
-}
-
-//=== footer ===//
 .footer {
   background-color: $primary;
   padding-top: 48px;
   padding-bottom: 32px;
   color: white;
+
   a {
     color: white;
     @include hoverScale(1.12);
   }
+
   @include pad {
     padding-bottom: 40px;
   }
+
   @include mobile {
     padding-top: 24px;
     padding-bottom: 24px;
   }
 }
+
 .footerMain {
   border-bottom: 1px solid white;
   padding-bottom: 32px;
   margin-bottom: 32px;
+
   @include mobile {
     flex-direction: row-reverse;
     align-items: flex-start;
@@ -104,61 +31,78 @@ header {
     margin-bottom: 24px;
   }
 }
+
 .footerNav {
   gap: 48px;
+
   @include mobile {
     display: none;
   }
 }
-.footerSocialMedia{
+
+.footerSocialMedia {
   gap: 32px;
+
   img {
     width: 48px;
     height: 48px;
   }
+
   @include pad {
     gap: 16px;
+
     img {
       width: 40px;
       height: 40px;
     }
   }
+
   @include mobile {
     gap: 8px;
+
     img {
       width: 24px;
       height: 24px;
     }
   }
 }
+
 .footerContact {
   color: white;
   font-size: 36px;
   margin-top: 24px;
+
   .material-icons {
     margin-right: 16px;
     font-size: 48px;
   }
+
   li:first-child {
     margin-bottom: 8px;
   }
+
   @include mobile {
     font-size: 16px;
     margin-top: 0;
+
     .material-icons {
       margin-right: 8px;
       font-size: 24px;
     }
   }
 }
+
 .footerCopyright {
   font-size: 14px;
+
   .terms {
     gap: 48px;
   }
+
   @include mobile {
     font-size: 16px;
     flex-direction: column;
+
     .terms {
       margin-top: 8px;
       flex-direction: column;

@@ -1,0 +1,30 @@
+input, textarea {
+  width: 100%;
+  background-color: $pink;
+  border: 1px solid $black;
+  padding: 6px 12px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+
+  &[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 4px;
+    border: 2px solid $black;
+  }
+
+  &[type="button"] {
+    border: 0;
+    background-color: $primary;
+    color: $white;
+    font-weight: bold;
+    padding: 16px 0px;
+    margin-top: 24px;
+    cursor: pointer;
+    @include hoverScale(1.1);
+  }
+}
