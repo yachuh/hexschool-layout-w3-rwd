@@ -4,16 +4,23 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
 
 // basics
-@import "variables";
-@import "reset";
-@import "mixin";
-@import "base";
+@import "./base/variables";
+@import "./base/reset";
+@import "./base/base";
 
-// utilities
-@import "utilities";
+// helper
+@import "./helpers/mixin";
+@import "./helpers/flex";
+
+// components
+@import "./components/pageTitle";
+@import "./components/pagination";
+@import "./components/form";
 
 // layout
-@import "layout";
+@import "./base/container";
+@import "./layout/header";
+@import "./layout/footer";
 
 // pages
 @import "./page/home";
