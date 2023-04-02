@@ -152,33 +152,8 @@ a {
   text-decoration: none;
   color: #000000; }
 
-.container {
-  max-width: 1440px;
-  padding: 0 15px;
-  margin: 0 auto; }
-  @media (max-width: 992px) {
-    .container {
-      max-width: 720px; } }
-  @media (max-width: 767px) {
-    .container {
-      max-width: 375px; } }
-
 main {
   margin-top: 80px; }
-
-.pageTitle {
-  font-size: 3em;
-  font-weight: 900;
-  border-left: 8px solid #AA0601;
-  padding-left: 16px; }
-  @media (max-width: 767px) {
-    .pageTitle {
-      font-size: 1.5em; } }
-
-.selector {
-  margin-top: 33px; }
-  .selector p {
-    font-size: 1.5em; }
 
 .d-flex {
   display: -webkit-box;
@@ -219,6 +194,90 @@ main {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end; }
+
+.pageTitle {
+  font-size: 3em;
+  font-weight: 900;
+  border-left: 8px solid #AA0601;
+  padding-left: 16px; }
+  @media (max-width: 767px) {
+    .pageTitle {
+      font-size: 1.5em; } }
+
+.pagination {
+  margin: 80px auto; }
+  .pagination a {
+    padding: 12px 15px;
+    border-top: 1px solid #555555;
+    border-right: 1px solid #555555;
+    border-bottom: 1px solid #555555;
+    font-size: 18px;
+    text-align: center;
+    color: #555555;
+    -webkit-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    transition: background-color .3s; }
+    .pagination a:hover {
+      background-color: #F2F2F2; }
+    .pagination a.pageUp {
+      border-left: 1px solid #555555;
+      padding: 12px 11px; }
+    .pagination a.pageDown {
+      padding: 12px 11px; }
+  .pagination .active {
+    background-color: #000000;
+    color: #fff; }
+    .pagination .active:hover {
+      background-color: #000000;
+      color: #fff; }
+  @media (max-width: 767px) {
+    .pagination {
+      margin: 64px auto; }
+      .pagination a {
+        font-size: 16px; } }
+
+input, textarea {
+  width: 100%;
+  background-color: #FBF2F2;
+  border: 1px solid #000000;
+  padding: 6px 12px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.5; }
+  input[type="checkbox"], textarea[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 4px;
+    border: 2px solid #000000; }
+  input[type="button"], textarea[type="button"] {
+    border: 0;
+    background-color: #AA0601;
+    color: #fff;
+    font-weight: bold;
+    padding: 16px 0px;
+    margin-top: 24px;
+    cursor: pointer;
+    -webkit-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    transition: all ease .3s; }
+    input[type="button"]:hover, textarea[type="button"]:hover {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
+
+.container {
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto; }
+  @media (max-width: 992px) {
+    .container {
+      max-width: 720px; } }
+  @media (max-width: 767px) {
+    .container {
+      max-width: 375px; } }
 
 header {
   background-color: #AA0601;
@@ -595,37 +654,6 @@ header {
     .contact .contactUs > p {
       font-size: 1.25em;
       margin-bottom: 24px; }
-  .contact input, .contact textarea {
-    width: 100%;
-    background-color: #FBF2F2;
-    border: 1px solid #000000;
-    padding: 6px 12px;
-    margin-top: 8px;
-    margin-bottom: 16px;
-    font-size: 16px;
-    line-height: 1.5; }
-    .contact input[type="checkbox"], .contact textarea[type="checkbox"] {
-      width: 24px;
-      height: 24px;
-      margin: 0px;
-      padding: 0px;
-      margin-right: 4px;
-      border: 2px solid #000000; }
-    .contact input[type="button"], .contact textarea[type="button"] {
-      border: 0;
-      background-color: #AA0601;
-      color: #fff;
-      font-weight: bold;
-      padding: 16px 0px;
-      margin-top: 24px;
-      cursor: pointer;
-      -webkit-transition: all ease .3s;
-      -o-transition: all ease .3s;
-      transition: all ease .3s; }
-      .contact input[type="button"]:hover, .contact textarea[type="button"]:hover {
-        -webkit-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-                transform: scale(1.1); }
   @media (max-width: 992px) {
     .contact .contactUs {
       width: 75%; } }
@@ -756,38 +784,6 @@ header {
   @media (max-width: 767px) {
     .sunglasses {
       width: 100%; } }
-
-.pagination {
-  margin: 80px auto; }
-  .pagination a {
-    padding: 12px 15px;
-    border-top: 1px solid #555555;
-    border-right: 1px solid #555555;
-    border-bottom: 1px solid #555555;
-    font-size: 18px;
-    text-align: center;
-    color: #555555;
-    -webkit-transition: background-color .3s;
-    -o-transition: background-color .3s;
-    transition: background-color .3s; }
-    .pagination a:hover {
-      background-color: #F2F2F2; }
-    .pagination a.pageUp {
-      border-left: 1px solid #555555;
-      padding: 12px 11px; }
-    .pagination a.pageDown {
-      padding: 12px 11px; }
-  .pagination .active {
-    background-color: #000000;
-    color: #fff; }
-    .pagination .active:hover {
-      background-color: #000000;
-      color: #fff; }
-  @media (max-width: 767px) {
-    .pagination {
-      margin: 64px auto; }
-      .pagination a {
-        font-size: 16px; } }
 
 .storePage {
   padding-top: 96px;
